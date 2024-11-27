@@ -6,3 +6,17 @@
 I//mportiamo il Provider in App.jsx e wrappiamoci la nostra applicazione - Facciamo in modo che il componente PostsList.jsx ****recuperi i post consumando il Context e crei dunque una card per ciascuno di essi.
 //La struttura dell’App deve essere
 //App.jsx > PostsPage.jsx > PostsList.jsx > PostCard.jsx 
+
+
+import React from 'react';
+import { PostsProvider } from './PostContext';
+import PostsPage from './PostsPage';
+const App = () => {
+    return (
+        <FruitProvider>
+            <PostsPage />
+        </FruitProvider>
+    );
+};
+
+export default App;

@@ -8,7 +8,7 @@ const FruitContext = createContext();
 export const useFruits = () => useContext(FruitContext);
 
 
-export const FruitProvider = ({ children }) => {
+export const PostsProvider = ({ children }) => {
     const [fruits, setFruits] = useState(exoticFruits);
 
     return (
