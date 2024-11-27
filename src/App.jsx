@@ -5,4 +5,4 @@
 //Creiamo un file per definire il nostro Context ed esportiamolo
 I//mportiamo il Provider in App.jsx e wrappiamoci la nostra applicazione - Facciamo in modo che il componente PostsList.jsx ****recuperi i post consumando il Context e crei dunque una card per ciascuno di essi.
 //La struttura dell’App deve essere
-//App.jsx > PostsPage.jsx > PostsList.jsx > PostCard.jsx
+//App.jsx > PostsPage.jsx > PostsList.jsx > PostCard.jsx 
