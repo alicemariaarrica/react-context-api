@@ -1,10 +1,10 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Home from "./pages/Home"
-import Posts from "./pages/Posts"
+import Posts from "./Pages/PostsPage"
 import Chisiamo from "./pages/Chisiamo"
 import PostsDetails from "./pages/PostsDetails"
 import Defaultlayout from "./pages/Defaultlayout"
-import { PostProvider } from './context/PostContext';
+import { PostProvider } from './Context/PostContext';
 
 function App() {
 
