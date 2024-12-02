@@ -8,15 +8,3 @@ I//mportiamo il Provider in App.jsx e wrappiamoci la nostra applicazione - Facci
 //App.jsx > PostsPage.jsx > PostsList.jsx > PostCard.jsx 
 
 
-import React from 'react';
-import { PostsProvider } from './PostContext';
-import PostsPage from './PostsPage';
-const App = () => {
-    return (
-        <FruitProvider>
-            <PostsPage />
-        </FruitProvider>
-    );
-};
-
-export default App;
