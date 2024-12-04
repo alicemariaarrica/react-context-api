@@ -1,18 +1,18 @@
 
-import { usePosts } from '../Context/PostContext';
+import React from 'react';
+import { usePosts } from '../context/PostContext';
 import { Link } from 'react-router-dom';
 
-export default function PostsPage() {
+function PostsPage() {
     const { posts } = usePosts();
 
     return (
-        <>
-            <h1>Post</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, fugiat? Nisi, impedit magnam. Explicabo veniam, quibusdam dolorem quaerat maxime soluta minus voluptatibus exercitationem odit, voluptate fugiat, in dignissimos iure. Nesciunt.</p>
-
+        <div>
+            <h1>Lista dei Post</h1>
+            <p>Qui puoi trovare tutti i post disponibili:</p>
             <div className="posts">
                 {posts.map((post, index) => (
-                    <div key={index} className="post">
+                    <div key={index}>
                         <h2>
                             <Link to={`/posts/${index}`}>{post.name}</Link>
                         </h2>
@@ -20,6 +20,8 @@ export default function PostsPage() {
                     </div>
                 ))}
             </div>
-        </>
+        </div>
     );
 }
+
+export default PostsPage;

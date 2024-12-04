@@ -1,9 +1,13 @@
-import { useParams } from 'react-router-dom';
-import postsList from '../data/PostsList';
 
-export default function PostDetails() {
+import React from 'react';
+import { useParams } from 'react-router-dom';
+import { usePosts } from '../context/PostContext';
+
+function PostDetails() {
     const { id } = useParams();
-    const post = postsList[id];
+    const { posts } = usePosts();
+
+    const post = posts[id];
 
     if (!post) {
         return <p>Post non trovato!</p>;
@@ -17,3 +21,5 @@ export default function PostDetails() {
         </div>
     );
 }
+
+export default PostDetails;
